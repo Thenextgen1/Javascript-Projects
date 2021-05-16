@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+}
+
+body {
+    background: #636363;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #a2ab58, #636363);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #a2ab58, #636363); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3em;
+}
+.celsius-c,
+.fahren-c {
+    font-size: 1em;
+    outline: none;
+}
+.icon-b{
+background: none;
+padding: 0em;
+margin: 2em;
+outline: none;
+}
+#icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
