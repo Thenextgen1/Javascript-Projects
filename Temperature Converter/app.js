@@ -10,9 +10,6 @@ formTemp.addEventListener('submit', (e) => {
     e.preventDefault();
     const celsiusInput = formTemp.elements.celTemp;
     const FahrenheitInput = formTemp.elements.fahTemp;
-    // let celsiusNum = parseInt(celsiusInput.value);
-    // let fahrenheitNum = parseInt(FahrenheitInput.value)
-
     if (celsiusInput.value && typeof parseInt(celsiusInput.value === 'number')) {
 
         FahrenheitInput.value = calculate(parseInt(celsiusInput.value));
@@ -36,7 +33,6 @@ const calculate = (num1, num2) => {
     else if (num2) {
         return (num2 - 32) * 5 / 9;
     }
-
 }
 
 
