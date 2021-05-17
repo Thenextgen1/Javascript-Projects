@@ -12,12 +12,12 @@ formTemp.addEventListener('submit', (e) => {
     const FahrenheitInput = formTemp.elements.fahTemp;
     if (celsiusInput.value && typeof parseInt(celsiusInput.value === 'number')) {
 
-        FahrenheitInput.value = calculate(parseInt(celsiusInput.value).toFixed(2));
+        FahrenheitInput.value = calculate(parseInt(celsiusInput.value));
         celsiusInput.value = '';
     }
     else if (FahrenheitInput.value && typeof parseInt(FahrenheitInput.value === 'number')) {
 
-        celsiusInput.value = calculate(undefined, parseInt(FahrenheitInput.value).toFixed(2));
+        celsiusInput.value = calculate(undefined, parseInt(FahrenheitInput.value));
         FahrenheitInput.value = '';
     }
     else if (typeof celsiusInput.value === 'string' || typeof FahrenheitInput.value === 'number') {
